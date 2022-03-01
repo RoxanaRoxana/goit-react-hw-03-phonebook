@@ -1,0 +1,27 @@
+.addForm__editor {
+  display: flex;
+  flex-direction: column;
+  border: solid 2px grey;
+  padding-left: 5px;
+  padding-right: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 150px;
+}
+
+.addForm__input {
+  margin-top: 5px;
+}
+
+.form__label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.add__button {
+  margin-top: 15px;
+  width: 80px;
+  font-size: 10px;
+  flex-wrap: nowrap;
+}

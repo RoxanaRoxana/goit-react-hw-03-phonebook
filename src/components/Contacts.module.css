@@ -1,0 +1,15 @@
+.contact__item {
+  display: flex;
+  align-items: center;
+}
+
+.contact__button {
+  padding: 2px 10px;
+  border: solid 1px lightgray;
+  border-radius: 5px;
+ 
+}
+
+.contact__text {
+  margin-right: 8px;
+}

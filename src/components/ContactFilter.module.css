@@ -1,0 +1,9 @@
+.contactFilter{
+    display: flex;
+    flex-direction: column;
+}
+
+.filterInput{
+    width: 130px;
+    margin-top: 8px;
+}
