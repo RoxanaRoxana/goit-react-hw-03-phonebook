@@ -39,7 +39,7 @@ export default class App extends Component {
     const { contacts, filter } = this.state;
 
     return contacts.filter(contact =>
-      contact.name.toLowerCase().includes(filter.toLocaleLowerCase())
+      contact.name.toLocaleLowerCase().includes(filter.toLocaleLowerCase())
     );
   };
 
