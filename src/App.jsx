@@ -20,6 +20,7 @@ export default class App extends Component {
     }
   }
 
+  
   componentDidUpdate(prevState) {
     const newNumbers = this.state.contacts;
     const prevNumbers = prevState.contacts;
