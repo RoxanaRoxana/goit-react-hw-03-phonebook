@@ -28,20 +28,22 @@ export default class App extends Component {
       localStorage.setItem('contacts', JSON.stringify(newNumbers));
     }
   }
+  
+   deleteContact = id => {
+  this.setState(({ contacts }) => ({
+     contacts: contacts.filter(contact => contact.id !== id),
+   }));
+ };
 
-  deleteContact = id => {
-    this.setState(({ contacts }) => ({
-      contacts: contacts.filter(contact => contact.id !== id),
-    }));
-  };
+ getContacts = () => {
+   const { contacts, filter } = this.state;
 
-  getContacts = () => {
-    const { contacts, filter } = this.state;
+   return contacts.filter(contact =>
+   contact.name.toLowerCase().includes(filter.toLocaleLowerCase())
+  );
+ };
 
-    return contacts.filter(contact =>
-      contact.name.includes(filter.toLowerCase())
-    );
-  };
+ 
 
   addContact = ({ name, number }) => {
     const { contacts } = this.state;
