@@ -45,7 +45,7 @@ export default class App extends Component {
 
  
 
-  addContact = ({ name, number }) => {
+  addContact = ( name, number ) => {
     const { contacts } = this.state;
     const contact = { id: nanoid(), name: name, number: number };
     contacts.some(item => item.name === name)
