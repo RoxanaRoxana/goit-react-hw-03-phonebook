@@ -43,11 +43,7 @@ export default class App extends Component {
   );
  };
   
-    filterContacts = (e) => {
-    const value = e.target.value.toLowerCase();
-    this.setState({ filter: value });
-  };
-
+ 
  
 
   addContact = ( {name, number} ) => {
