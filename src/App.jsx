@@ -42,6 +42,11 @@ export default class App extends Component {
    contact.name.toLowerCase().includes(filter)
   );
  };
+  
+    filterContacts = (e) => {
+    const value = e.target.value.toLowerCase();
+    this.setState({ filter: value });
+  };
 
  
 
