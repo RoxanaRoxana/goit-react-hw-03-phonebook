@@ -4,6 +4,7 @@ import styles from './Contacts.module.css'
 export const Contacts = ({ contacts, onDeleteContact }) => {
   return (
     <>
+    { (contacts && contacts?.length > 0)  ?
       <ul className={styles.contact__list}>
         {contacts.map(({ id, name, number }) => (
           <li key={id} className={styles.contact__item}>
@@ -18,6 +19,7 @@ export const Contacts = ({ contacts, onDeleteContact }) => {
           </li>
         ))}
       </ul>
+     : null}
     </>
   );
 };
